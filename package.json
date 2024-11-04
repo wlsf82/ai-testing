@@ -2,8 +2,11 @@
   "name": "ai-testing",
   "version": "1.0.0",
   "scripts": {
+    "test": "npm run cy:run && npm run pw:run",
     "cy:open": "cypress open",
-    "pw:tests": "playwright test --ui"
+    "cy:run": "cypress run",
+    "pw:open": "playwright test --ui",
+    "pw:run": "playwright test"
   },
   "keywords": ["cypress", "playwright", "api-testing"],
   "author": "Walmyr <wlsf82@gmail.com> (https://walmyr.dev/)",
